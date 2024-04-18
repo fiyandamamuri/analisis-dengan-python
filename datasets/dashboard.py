@@ -32,7 +32,7 @@ def plot_seasonal_effect(day_df):
     return fig
 
 # Membaca data
-day_csv = 'analisis dengan python/datasets/day.csv'
+day_csv = 'analisis dengan python\datasets\day.csv'
 day_df = pd.read_csv(day_csv)
 day_df['dteday'] = pd.to_datetime(day_df['dteday'])
 day_df.set_index('dteday', inplace=True)
